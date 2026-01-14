@@ -4,12 +4,16 @@ body {
     --text-color: #202020;
     --emph-color: #101010;
     --sub-text-color: #808080;
+    --link-color: #1010da;
+    --vlink-color: #681da8;
 }
 @media (prefers-color-scheme: dark) {
     body {
         --bg-color: #1b1b20;
         --text-color: #c8c8c8;
         --emph-color: #e4e4e4;
+        --link-color: #99c3ff;
+        --vlink-color: #c58af9;
     }
 }
 
@@ -33,6 +37,8 @@ h1, h2, h3, h4, h5, h6 {
 a:not(:hover) {
     text-decoration: none;
 }
+a {color: var(--link-color);}
+a:visited {color: var(--vlink-color);}
 
 /* custom */
 .banner, .intro {
